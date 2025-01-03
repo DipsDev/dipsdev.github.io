@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Project from "../components/partials/Project.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -6,16 +8,30 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="space-y-4">
-	<p class="text-brighter">Hello There! 👋</p>
-    <h1 class="md:text-5xl text-3xl font-bold text-bright">Let's create big things together</h1>
-    <p class="md:w-[640px] md:text-lg text-dark">
-      Hi, I'm Ido, I am a full-stack developer based in Israel. I enjoy working
-      on projects that challenge me to constantly learn and improve my skills.
-      Whether it's developing web applications or designing user interfaces, I
-      love being part of the creative process and bringing ideas to life. I'm a
-      musician at heart and love playing both the drums and guitar in my free
-      time.
-    </p>
+  <Header />
+  <div class="mt-[150px]">
+    <h2 class="text-2xl md:text-3xl text-brighter font-bold">Projects</h2>
+    <div class="mt-9 flex flex-col items-center justify-start gap-7">
+      <Project
+        title="HostLocal"
+        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
+        offline
+      />
+      <Project
+        title="HostLocal"
+        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
+        offline
+      />
+      <Project
+        title="HostLocal"
+        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
+        offline
+      />
+      <Project
+        title="HostLocal"
+        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
+        offline
+      />
+    </div>
   </div>
 </Layout>
