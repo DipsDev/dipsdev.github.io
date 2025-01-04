@@ -1,0 +1,21 @@
+---
+const { span } = Astro.props;
+---
+
+<div
+  class:list={[
+    "px-5 py-4 rounded-md border border-brighter reg-post flex flex-col items-start justify-between  hover:brightness-75 bg-[#FAF8F2] cursor-pointer transition-all",
+    span || " ",
+  ]}
+>
+  <div>
+    <h2 class={"text-2xl mb-3 font-semibold text-bright"}>
+      Project overview - Empire Hosting
+    </h2>
+    <p class={"text-dark"}>
+      In this blog post, I'll go over the features and technologies used in this
+      project.
+    </p>
+  </div>
+  <p class={"mt-2 text-sm text-dark-bright"}>Mar 11, 2024</p>
+</div>
