@@ -7,7 +7,7 @@ export default {
         brighter: "#795757",
         bright: "#664343",
         dark: "#3D3D3D",
-        "dark-bright": "#525252",
+        "dark-bright": "#595959",
       },
     },
   },
