@@ -4,22 +4,49 @@ import Project from "./partials/Project.astro";
 
 <div class="mt-[150px] pb-10">
   <h2 class="text-2xl md:text-4xl text-brighter font-bold">Projects</h2>
-  <div class="mt-9 flex flex-col items-center justify-start gap-7">
-    <Project
-      title="HostLocal"
-      description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-    />
-    <Project
-      title="HostLocal"
-      description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-    />
-    <Project
-      title="HostLocal"
-      description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-    />
-    <Project
-      title="HostLocal"
-      description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-    />
+  <div class="mt-5 gap-7 grid grid-cols-2 grid-rows-3">
+    <div class="gap-7 flex flex-col items-start justify-start">
+      <h4 class="text-xl text-dark-bright italic font-medium">
+        Freelance Projects
+      </h4>
+      <Project
+        title="YO Automation"
+        description="YO Automation provides courses about automation for the youtube platform."
+      />
+      <Project
+        title="SecureHost"
+        description="SecureHost provides cloud solutions for small to medium businesses."
+      />
+      <Project
+        title="Empire Hosting"
+        description="Empire Hosting is an hosting company based in israel, they provide cloud solutions for businesses."
+      />
+      <Project
+        title="HostLocal"
+        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses."
+      />
+      <Project
+        title="LocalMulti"
+        description="LocalMulti provides simple vps services, and website hosting to small businesses."
+      />
+    </div>
+    <!-- Other Projects -->
+    <div class="gap-7 flex flex-col items-start justify-start">
+      <h4 class="text-xl text-dark-bright italic font-medium">
+        Other Projects
+      </h4>
+      <Project
+        title="ShipC"
+        description="A C implementation of my programming language Ship"
+      />
+      <Project
+        title="Stash"
+        description="My cyber class final project. a git + github like service, made with nothing but python default packages."
+      />
+      <Project
+        title="Wrap"
+        description="A redis clone built with the Java language."
+      />
+    </div>
   </div>
 </div>
