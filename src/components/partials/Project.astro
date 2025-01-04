@@ -6,22 +6,33 @@ interface Props {
 }
 
 const { title, description, offline } = Astro.props;
+
+import { Icon } from "astro-icon/components";
 ---
 
-<div class="border-b border-brighter group">
-  <div class="flex flex-row items-center justify-start gap-4">
-    <h3
-      class="md:text-xl font-medium text-bright group-hover:underline underline-offset-2"
-    >
-      {title}
-    </h3>
-    {
-      offline && (
-        <p class="text-sm bg-brighter/50 text-bright font-normal px-4 py-1 rounded-full no-underline">
-          Offline
-        </p>
-      )
-    }
+<div class="border-b border-dashed border-brighter group cursor-pointer">
+  <div class="flex flex-row items-center justify-between">
+    <div class="flex flex-row items-center justify-start gap-4">
+      <h3
+        class="md:text-xl font-medium text-bright group-hover:underline underline-offset-2"
+      >
+        {title}
+      </h3>
+      {
+        offline && (
+          <p class="text-sm bg-brighter/50 text-bright font-normal px-4 py-1 rounded-full no-underline">
+            Offline
+          </p>
+        )
+      }
+    </div>
+    <div>
+      <p
+        class="flex opacity-0 group-hover:opacity-100 transition-opacity italic text-sm text-dark flex-row items-center justify-start gap-1"
+      >
+        See More <Icon name={"right_arrow"} />
+      </p>
+    </div>
   </div>
   <p class="text-dark pb-3">
     {description}

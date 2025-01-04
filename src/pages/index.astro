@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import Project from "../components/partials/Project.astro";
+import Projects from "../components/Projects.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -9,29 +9,5 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <Header />
-  <div class="mt-[150px]">
-    <h2 class="text-2xl md:text-3xl text-brighter font-bold">Projects</h2>
-    <div class="mt-9 flex flex-col items-center justify-start gap-7">
-      <Project
-        title="HostLocal"
-        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-        offline
-      />
-      <Project
-        title="HostLocal"
-        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-        offline
-      />
-      <Project
-        title="HostLocal"
-        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-        offline
-      />
-      <Project
-        title="HostLocal"
-        description="HostLocal is an israeli company that provides cloud solutions to small and large businesses"
-        offline
-      />
-    </div>
-  </div>
+  <Projects />
 </Layout>
