@@ -9,7 +9,7 @@ const { title, description } = Astro.props;
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="border-b border-dashed border-brighter group cursor-pointer w-full">
+<div class="group cursor-pointer w-full project">
   <div class="flex flex-row items-center justify-between">
     <div class="flex flex-row items-center justify-start gap-4">
       <h3
@@ -30,3 +30,18 @@ import { Icon } from "astro-icon/components";
     {description}
   </p>
 </div>
+
+<style>
+  .project {
+    background-image: repeating-linear-gradient(
+      90deg,
+      #795757,
+      #795757 10px,
+      transparent 10px,
+      transparent 14px
+    );
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 1px;
+  }
+</style>
