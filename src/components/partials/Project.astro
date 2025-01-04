@@ -2,10 +2,9 @@
 interface Props {
   title: string;
   description: string;
-  offline?: boolean;
 }
 
-const { title, description, offline } = Astro.props;
+const { title, description } = Astro.props;
 
 import { Icon } from "astro-icon/components";
 ---
@@ -18,13 +17,6 @@ import { Icon } from "astro-icon/components";
       >
         {title}
       </h3>
-      {
-        offline && (
-          <p class="text-sm bg-brighter/50 text-bright font-normal px-4 py-1 rounded-full no-underline">
-            Offline
-          </p>
-        )
-      }
     </div>
     <div>
       <p
