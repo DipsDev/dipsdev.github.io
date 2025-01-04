@@ -4,7 +4,7 @@ const { span } = Astro.props;
 
 <div
   class:list={[
-    "px-5 py-4 rounded-md border border-brighter reg-post flex flex-col items-start justify-between  hover:brightness-75 bg-[#FAF8F2] cursor-pointer transition-all",
+    "px-5 py-4 rounded-md border border-brighter reg-post flex flex-col gap-6 items-start justify-between  hover:brightness-75 bg-[#FAF8F2] cursor-pointer transition-all",
     span || " ",
   ]}
 >
@@ -17,5 +17,5 @@ const { span } = Astro.props;
       project.
     </p>
   </div>
-  <p class={"mt-2 text-sm text-dark-bright"}>Mar 11, 2024</p>
+  <p class={"text-sm text-dark-bright"}>Mar 11, 2024</p>
 </div>
