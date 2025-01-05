@@ -4,6 +4,9 @@ dist/
 # generated types
 .astro/
 
+# obsidian files
+src/data/blog/.obsidian
+
 # dependencies
 node_modules/
 
