@@ -14,7 +14,21 @@ const posts = await getCollection("blog");
     {
       posts.map((post, i) => {
         if (i == 0) {
-          return <BlogGridFeatured {...post.data} />;
+          return (
+            <BlogGridFeatured
+              {...post.data}
+              href={`/posts/${post.id.split("/").pop()}`}
+            />
+          );
+        }
+        if (i == 1) {
+          return (
+            <BlogGrid
+              {...post.data}
+              href={`/posts/${post.id.split("/").pop()}`}
+              span="md:row-span-2"
+            />
+          );
         }
         return (
           <BlogGrid
@@ -24,5 +38,6 @@ const posts = await getCollection("blog");
         );
       })
     }
+    <div class="col-span-3 h-[250px]"></div>
   </div>
 </Layout>
