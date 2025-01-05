@@ -1,14 +1,14 @@
 ---
-import BlogPost from "../components/partials/BlogPost.astro";
-import BlogPostFeatured from "../components/partials/BlogPostFeatured.astro";
+import BlogGrid from "../components/partials/BlogGrid.astro";
+import BlogGridFeatured from "../components/partials/BlogGridFeatured.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-7 p-3 md:p-0">
-    <BlogPostFeatured />
-    <BlogPost span="md:row-span-2" />
-    <BlogPost />
-    <BlogPost />
+    <BlogGridFeatured />
+    <BlogGrid span="md:row-span-2" />
+    <BlogGrid />
+    <BlogGrid />
   </div>
 </Layout>
