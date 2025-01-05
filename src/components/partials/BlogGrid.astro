@@ -1,8 +1,9 @@
 ---
-const { span, topic, title, description, pubDate } = Astro.props;
+const { span, topic, title, description, pubDate, href } = Astro.props;
 ---
 
-<div
+<a
+  href={href}
   class:list={[
     "px-5 py-4 rounded-md border md:min-w-[350px] border-brighter reg-post flex flex-col gap-6 items-start justify-between  hover:brightness-75 bg-[#FAF8F2] cursor-pointer transition-all grow",
     span || " ",
@@ -18,4 +19,4 @@ const { span, topic, title, description, pubDate } = Astro.props;
     </p>
   </div>
   <p class={"text-sm text-dark-bright"}>{pubDate.toDateString()}</p>
-</div>
+</a>

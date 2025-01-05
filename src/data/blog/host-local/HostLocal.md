@@ -3,6 +3,7 @@ title: HostLocal
 description: Development of a cloud hosting website for Hostlocal, a cloud services company based in Israel.
 pubDate: 2023-09-20
 topic: project
+slug: host-local
 ---
 
 Development of a cloud hosting website for Hostlocal, a cloud services company based in Israel.

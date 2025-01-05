@@ -12,8 +12,16 @@ const posts = await getCollection("blog");
     class="grid grid-cols-1 md:grid-cols-3 grow gap-7 p-3 md:pl-0 md:pr-0 md:pt-0 pb-7"
   >
     {
-      posts.map((post) => {
-        return <BlogGrid {...post.data} />;
+      posts.map((post, i) => {
+        if (i == 0) {
+          return <BlogGridFeatured {...post.data} />;
+        }
+        return (
+          <BlogGrid
+            {...post.data}
+            href={`/posts/${post.id.split("/").pop()}`}
+          />
+        );
       })
     }
   </div>

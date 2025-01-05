@@ -1,8 +1,9 @@
 ---
 title: ShipC
 description: Development of a programming language written in pure C.
-pubDate: "2024-07-13"
+pubDate: 2024-07-13
 topic: project
+slug: shipc
 ---
 Development of a programming language written in pure C.
 
