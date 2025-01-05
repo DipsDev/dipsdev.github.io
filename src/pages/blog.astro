@@ -5,9 +5,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-7 p-3 md:p-0">
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 grow gap-7 p-3 md:pl-0 md:pr-0 md:pt-0 pb-7"
+  >
     <BlogGridFeatured />
     <BlogGrid span="md:row-span-2" />
+    <BlogGrid />
+    <BlogGrid />
+    <BlogGrid />
+    <BlogGrid />
+    <BlogGrid />
     <BlogGrid />
     <BlogGrid />
   </div>
