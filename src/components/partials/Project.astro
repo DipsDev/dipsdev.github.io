@@ -2,14 +2,15 @@
 interface Props {
   title: string;
   description: string;
+  href: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, href } = Astro.props;
 
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="group cursor-pointer w-full project">
+<a class="group cursor-pointer w-full project" href={href}>
   <div class="flex flex-row items-center justify-between">
     <div class="flex flex-row items-center justify-start gap-4">
       <h3
@@ -29,7 +30,7 @@ import { Icon } from "astro-icon/components";
   <p class="text-dark pb-3">
     {description}
   </p>
-</div>
+</a>
 
 <style>
   .project {
