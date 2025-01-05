@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -13,5 +14,28 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<h1>{post.data.title}</h1>
-<Content />
+<Layout>
+  <div class="mx-auto">
+    <p class="font-black text-brighter uppercase mb-2">
+      {post.data.topic}
+    </p>
+    <h1 class="text-4xl font-black text-bright mb-2">
+      {post.data.title}
+    </h1>
+    <h2 class="text-dark">{post.data.pubDate.toDateString()}</h2>
+    <div id="blog-content" class="whitespace-pre-wrap">
+      <div class="w-full h-[2px] rounded-full bg-brighter"></div>
+      <Content />
+    </div>
+  </div>
+</Layout>
+
+<style is:global>
+  #blog-content {
+    @apply max-w-[850px] md:text-lg;
+  }
+
+  #blog-content img {
+    @apply max-w-full rounded-md border-bright border my-3;
+  }
+</style>
