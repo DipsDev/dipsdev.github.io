@@ -5,6 +5,7 @@ pubDate: 2024-07-13
 topic: project
 slug: shipc
 ---
+
 Development of a programming language written in pure C.
 
 The project started as a learning project for the C language and how lexers, bytecode, vms and garbage collected languages work.
@@ -15,3 +16,5 @@ Ship is a dynamic, high-level, garbage-collected language. its syntax was inspir
 
 Ship was a great project to work on, and serves as a continuation project for the previous Ship that was written in Java.
 It has verbose error logging and everything needed to run simple programs.
+
+<a href="https://github.com/DipsDev/shipc" target="_blank" class="siia-btn">View more on Github</a>

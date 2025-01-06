@@ -32,10 +32,14 @@ const { Content } = await render(post);
 
 <style is:global>
   #blog-content {
-    @apply max-w-[850px] md:text-lg;
+    @apply max-w-[850px] md:text-lg pb-10;
   }
 
   #blog-content img {
     @apply max-w-full rounded-md border-bright border my-3;
+  }
+
+  #blog-content .siia-btn {
+    @apply bg-brighter px-8 py-4 rounded-md text-white  text-right hover:bg-bright transition-all;
   }
 </style>
